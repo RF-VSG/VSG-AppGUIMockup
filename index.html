@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap411/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>RF VSG</title>
+  </head>
+  <body>
+    
+    <header>
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-1">
+    			<img src="#" />
+    			</div>
+    			<div class="col-3">
+    				<select class="form-control" id="" data-toggle="tooltip" data-placement="top" title="The user can select from the instruments connected to the computer that they wish to use.">
+    					<option>Add an instrument</option>
+    					<option>Instrument One</option>
+    					<option>Instrument Two</option>
+    				</select>
+    			</div>
+    			<div class="col-2">
+    				<button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="top" title="Once the user selects an instrument on the left, they are able to add the instrument.">Add Instrument</button>
+    			</div>
+    			<div class="col-2">
+    				<button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="This button will populate the instrument select menu to the left with all the instruments that the software automatically finds.">Find Instruments</button>
+    			</div>
+    			<div class="col-3">
+    			</div>
+    			<div class="col-1">
+    			<button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Help the user with whatever they might need.">Help</button>
+    			</div>
+    		</div>
+    	</div>
+    </header>
+
+    <content>
+    	<ul class="" data-toggle="tooltip" data-placement="left" title="This menu contains all of the added instruments that the user has plugged in to the computer and subsequently added with the controls above.">
+		  <li class="nav-active">
+		    <a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="This is what happens when an instrument gets added to the window.">Instrument 1</a>
+		  </li>
+		  <li class="">
+		    <a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="This only appears if the user has added a second instrument.">Instrument 2</a>
+		  </li>
+		  <li class="">
+		    <a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="This only appears if the user has added a third instrument.">Instrument 3</a>
+		  </li>
+		  <li class="">
+		    <a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="This only appears when a user has added N instruments.">Instrument #...</a>
+		  </li>
+		  <!--<li class="nav-item">
+		    <a class="nav-link" href="#">Link</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link disabled" href="#">Disabled</a>
+		  </li>-->
+		</ul>
+
+
+    	<div class="container">
+	    	
+	    	<div class="row">
+
+				<div class="col-6" data-toggle="tooltip" data-placement="bottom" title="This section holds the very basic controls for the given instrument. The power(ie amplitude) and frequency are the things that all users want easy access to. Also the user can turn the power on or off using the button.">
+					<table class="table table-borderless">
+					  <tbody>
+					    <tr>
+					      <th scope="row">Frequency</th>
+					      <td><input type="text" placeholder="1" class="form-control"></td>
+					      <td>
+					      	<select class="form-control" id="">
+	    						<option>Hz</option>
+	    						<option>kHz</option>
+	    						<option>MHz</option>
+	    						<option selected="selected">GHz</option>
+	    						
+	    						
+	    					</select>
+
+					      </td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Power</th>
+					      <td><input type="text" placeholder="1.0" class="form-control"></td>
+					      <td>
+					      	<select class="form-control" id="">
+	    						<option>Watts</option>
+	    						<option selected="selected">dBm</option>
+	    					</select>
+
+					      </td>
+					    </tr>
+
+					    <tr>
+					      <th scope="row"></th>
+					      <td>
+					      <td>
+					      		 <button type="button" class="btn btn-success">Power On</button>
+					      </td>
+					    </tr>
+
+
+					   
+					    
+					  </tbody>
+					</table>
+				</div>
+
+				<div class="col-6" data-toggle="tooltip" data-placement="bottom" title="This section is a quick instrument status indicator. It should tell the user what is on/off without giving them control over those things.">
+					
+					
+				
+				<button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="This would indicate that Modulation is on. It doesnt allow the user to change the state - only notifies.">Modulation On</button>
+				<button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="This would indicate that something is off. It does not allow the user to change the state - only notifies.">Something Off</button>
+				<button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="This is just filler.">Something On?</button>
+				<button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="This is just filler.">Something On?</button>
+
+				</div>
+			</div>
+		</div>
+    </content>
+
+    <section id="main">
+    	
+    	
+    			<div class="section-left">
+    				<ul class="section-menu" data-toggle="tooltip" data-placement="left" title="">
+					  <li class="nav-active">
+					    <a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="This will show a virtual front panel that the user can play with in the section to the right.">Front Panel</a>
+					  </li>
+					  <li class="">
+					    <a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="This will control all the modulation settings. Am, FM, PM, IQ Mod etc.">Modulation</a>
+					  </li>
+					  <li class="">
+					    <a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="This will change all of the various settings of the instrument that the user is allowed to change.">Settings</a>
+					  </li>
+					  <li class="">
+					    <a class="" href="#" data-toggle="tooltip" data-placement="bottom" title="This section will only be visible to us. It will allows us to manually control the hardware for debugging purposes.">IQ Board HW Control</a>
+					  </li>
+
+					  <li><a href="#">RF Synth HW Control</a></li>
+					  <li><a href="#">LF Synth HW Control</a></li>
+					  <li><a href="#">RF Output HW Control</a></li>
+					  <li><a href="#">Clock Gen HW Control</a></li>
+					  <li><a href="#">Settings</a></li>
+					  <li><a href="#">Settings</a></li>
+					  <li><a href="#">Settings</a></li>
+					  <li><a href="#">Settings</a></li>
+					  <!--<li class="nav-item">
+					    <a class="nav-link" href="#">Link</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link disabled" href="#">Disabled</a>
+					  </li>-->
+					</ul>
+				</div>
+				<div class="section-right" data-toggle="tooltip" data-placement="bottom" title="This will be the content of each tab that is shown to the left. The user will select a tab and then the associated controls will appear allowing them to interact with those settings.">
+
+					<div class="section-controls">
+					Control stuff here. Toggle over me for more.
+					</div>
+
+				</div>
+    	
+
+    </section>
+
+    <footer>
+    	
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="bootstrap411/js/bootstrap.min.js" ></script>
+
+    <script type="text/javascript">
+    	
+    	$(function () {
+		  $('[data-toggle="tooltip"]').tooltip();
+		});
+
+    </script>
+  </body>
+</html>
